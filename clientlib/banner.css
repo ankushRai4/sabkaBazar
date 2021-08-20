@@ -1,0 +1,49 @@
+ /* Modal Content/Box */
+ .modal-content {
+    float: right;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  .containerText{
+    float: right;
+    /* margin: -25% auto 15% auto; */
+    width: 50%; 
+  }
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 767px) {
+    button {
+      width: 125%;
+    }
+    picture{
+      float: left;
+    }
+    .containerText {
+      margin: -35% auto 19% auto;
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .containerText{
+      margin: -25% auto 15% auto;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+  }
+  
+ 
+
+  .banner-inner-img {
+    position: relative;
+    z-index: 0;
+    line-height: 0;
+    border-bottom: 5px solid #E8E8E8;
+}
+.banner-inner-img .bg-bg{
+  width: 35%;
+  padding-top: 3%;
+}

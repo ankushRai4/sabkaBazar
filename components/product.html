@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <select id="productListMobile">
+      <option class="dropDownList" value="" selected>Please select</option>
+    </script>
+  </select>
+    
+<div class="row content">
+  <div class="col-sm-3 sidenav">
+    <ul class="nav nav-pills nav-stacked" id="productdropDown-list-container">
+      <script id="productDropDownListList" type="text/x-handlebars-template">
+        {{#each this}}
+      <li id="{{this.id}}"><a href="#">{{this.name}}</a></li>
+      {{/each}}
+    </script>
+    </ul><br>
+  </div>
+
+  
+  <div class="col-sm-9">
+      <div class="plp-list" id="product-list">
+          <div class="row no-gutters"  id="product-list-container">
+            <script id="productList" type="text/x-handlebars-template">
+              {{#each this}}
+              <div class="productCards col-xl-4 col-md-6 .col-lg-4 col-sm-12" category="{{this.category}}">
+                  <div class="product-image-card">
+                    <h3>{{this.name}}</h3>
+                    <div class="side-by-side">
+                      <img  src="{{this.imageURL}}" alt="{{this.sku}}">
+                      <h6>{{this.description}}</h6>
+                    </div>   
+                    <button href="#" class="teaserBtnAna custom-btn bor arrow-r clr-w">Buy Now @Rs{{this.price}}</button>
+                  </div>
+               </div>
+               {{/each}}
+              </script>
+           </div>
+          
+          
+           </div>
+          </div>
+       </div>
+  </div>
+</div>
+</div>

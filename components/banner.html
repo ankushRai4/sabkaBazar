@@ -1,0 +1,21 @@
+<div class="container" id="categoriescontainer">
+    <script id="categorieList" type="text/x-handlebars-template">
+        {{#each this}}
+    <div class="banner-inner-img">
+      <picture>
+          <source class="mobiler" srcset="{{this.imageUrl}}"
+              media="(max-width: 767px)">
+
+          <img class="bg-bg" srcset="{{this.imageUrl}}"
+              alt="">
+
+      </picture>
+      <div class="containerText">
+        <h1>{{this.name}}</h1>
+        <h6>{{this.description}}</h6>
+        <button>Explore {{this.key}}</button>
+      </div>
+  </div>
+  {{/each}}
+</script>
+</div>
